@@ -13,7 +13,21 @@
 		8CC4A2C325C6787F000521CA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC4A2C125C6787F000521CA /* Main.storyboard */; };
 		8CC4A2C525C67883000521CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CC4A2C425C67883000521CA /* Assets.xcassets */; };
 		8CC4A2C825C67883000521CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CC4A2C625C67883000521CA /* LaunchScreen.storyboard */; };
+		8CC4A2D725C678A5000521CA /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4A2D625C678A5000521CA /* UITests.swift */; };
+		8CC4A2E125C679F3000521CA /* HomeScreenEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4A2E025C679F3000521CA /* HomeScreenEnum.swift */; };
+		8CC4A2E525C67A4A000521CA /* TestCasesClima.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4A2E425C67A4A000521CA /* TestCasesClima.swift */; };
+		8CC4A2E925C67AA1000521CA /* TestCasesClimaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC4A2E825C67AA1000521CA /* TestCasesClimaExtension.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CC4A2D925C678A5000521CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CC4A2B025C6787F000521CA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CC4A2B725C6787F000521CA;
+			remoteInfo = UITestsSampleApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8CC4A2B825C6787F000521CA /* UITestsSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UITestsSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +38,23 @@
 		8CC4A2C425C67883000521CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CC4A2C725C67883000521CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CC4A2C925C67883000521CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CC4A2D425C678A5000521CA /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CC4A2D625C678A5000521CA /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
+		8CC4A2D825C678A5000521CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CC4A2E025C679F3000521CA /* HomeScreenEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenEnum.swift; sourceTree = "<group>"; };
+		8CC4A2E425C67A4A000521CA /* TestCasesClima.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCasesClima.swift; sourceTree = "<group>"; };
+		8CC4A2E825C67AA1000521CA /* TestCasesClimaExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCasesClimaExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8CC4A2B525C6787F000521CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC4A2D125C678A5000521CA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				8CC4A2BA25C6787F000521CA /* UITestsSampleApp */,
+				8CC4A2D525C678A5000521CA /* UITests */,
 				8CC4A2B925C6787F000521CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				8CC4A2B825C6787F000521CA /* UITestsSampleApp.app */,
+				8CC4A2D425C678A5000521CA /* UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +94,18 @@
 				8CC4A2C925C67883000521CA /* Info.plist */,
 			);
 			path = UITestsSampleApp;
+			sourceTree = "<group>";
+		};
+		8CC4A2D525C678A5000521CA /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				8CC4A2D625C678A5000521CA /* UITests.swift */,
+				8CC4A2E425C67A4A000521CA /* TestCasesClima.swift */,
+				8CC4A2E025C679F3000521CA /* HomeScreenEnum.swift */,
+				8CC4A2E825C67AA1000521CA /* TestCasesClimaExtension.swift */,
+				8CC4A2D825C678A5000521CA /* Info.plist */,
+			);
+			path = UITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +128,24 @@
 			productReference = 8CC4A2B825C6787F000521CA /* UITestsSampleApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		8CC4A2D325C678A5000521CA /* UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CC4A2DB25C678A5000521CA /* Build configuration list for PBXNativeTarget "UITests" */;
+			buildPhases = (
+				8CC4A2D025C678A5000521CA /* Sources */,
+				8CC4A2D125C678A5000521CA /* Frameworks */,
+				8CC4A2D225C678A5000521CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CC4A2DA25C678A5000521CA /* PBXTargetDependency */,
+			);
+			name = UITests;
+			productName = UITests;
+			productReference = 8CC4A2D425C678A5000521CA /* UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -98,6 +157,10 @@
 				TargetAttributes = {
 					8CC4A2B725C6787F000521CA = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					8CC4A2D325C678A5000521CA = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 8CC4A2B725C6787F000521CA;
 					};
 				};
 			};
@@ -115,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				8CC4A2B725C6787F000521CA /* UITestsSampleApp */,
+				8CC4A2D325C678A5000521CA /* UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +191,13 @@
 				8CC4A2C825C67883000521CA /* LaunchScreen.storyboard in Resources */,
 				8CC4A2C525C67883000521CA /* Assets.xcassets in Resources */,
 				8CC4A2C325C6787F000521CA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC4A2D225C678A5000521CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +214,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8CC4A2D025C678A5000521CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CC4A2D725C678A5000521CA /* UITests.swift in Sources */,
+				8CC4A2E125C679F3000521CA /* HomeScreenEnum.swift in Sources */,
+				8CC4A2E925C67AA1000521CA /* TestCasesClimaExtension.swift in Sources */,
+				8CC4A2E525C67A4A000521CA /* TestCasesClima.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CC4A2DA25C678A5000521CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CC4A2B725C6787F000521CA /* UITestsSampleApp */;
+			targetProxy = 8CC4A2D925C678A5000521CA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		8CC4A2C125C6787F000521CA /* Main.storyboard */ = {
@@ -319,6 +409,44 @@
 			};
 			name = Release;
 		};
+		8CC4A2DC25C678A5000521CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SUD296CF7;
+				INFOPLIST_FILE = UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.albina.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UITestsSampleApp;
+			};
+			name = Debug;
+		};
+		8CC4A2DD25C678A5000521CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5SUD296CF7;
+				INFOPLIST_FILE = UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.albina.UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UITestsSampleApp;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -336,6 +464,15 @@
 			buildConfigurations = (
 				8CC4A2CD25C67883000521CA /* Debug */,
 				8CC4A2CE25C67883000521CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CC4A2DB25C678A5000521CA /* Build configuration list for PBXNativeTarget "UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CC4A2DC25C678A5000521CA /* Debug */,
+				8CC4A2DD25C678A5000521CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
